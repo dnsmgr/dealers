@@ -1,5 +1,15 @@
 version: '2'
 services:
+  mongoexpress:
+    image: mongo-express
+    depends_on:
+         - db
+    ports:
+        - "8081:8081"
+    links:
+        - db:mongo
+
+    restart: always
   web:
     restart: always
     build: .
