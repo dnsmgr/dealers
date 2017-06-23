@@ -1,0 +1,9 @@
+.DS_Store
+.nodemonignore
+.sass-cache/
+.vscode
+npm-debug.log
+node_modules/
+public/lib
+app.log
+.idea
